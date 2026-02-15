@@ -1,0 +1,297 @@
+/* ===== Compact & Visible Theme ===== */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e6ecf5;
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+}
+
+/* HEADER */
+header {
+    background-color: #0b5ed7;
+    color: #ffffff;
+    padding: 18px;
+}
+
+/* NAVIGATION */
+nav {
+    background-color: #ffffff;
+    padding: 10px;
+    border-bottom: 3px solid #0b5ed7;
+}
+
+nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #0b5ed7;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+nav a:hover {
+    color: #d63384;
+    text-decoration: underline;
+}
+
+/* MAIN CONTENT */
+main {
+    background-color: #ffffff;
+    padding: 18px;
+    width: 88%;
+    margin: 15px auto;
+    border-radius: 6px;
+}
+
+/* HEADINGS */
+h1 {
+    margin: 4px 0;
+    font-size: 26px;
+}
+
+h2 {
+    color: #0b5ed7;
+    border-bottom: 2px solid #ffc107;
+    display: inline-block;
+    padding-bottom: 3px;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+/* TEXT */
+p {
+    color: #212529;
+    line-height: 1.5;
+    margin: 6px 0;
+}
+
+/* SECTIONS */
+section {
+    margin-bottom: 18px;
+}
+
+/* TABLE */
+table {
+    border-collapse: collapse;
+    background-color: #ffffff;
+    width: 100%;
+    font-size: 14px;
+}
+
+th {
+    background-color: #198754;
+    color: white;
+}
+
+td, th {
+    border: 1px solid #adb5bd;
+    padding: 7px;
+}
+
+/* LISTS */
+ul, ol {
+    margin: 6px 0 6px 20px;
+}
+
+ul li, ol li {
+    margin-bottom: 5px;
+}
+
+/* IMAGES */
+img {
+    border-radius: 8px;
+    border: 3px solid #0b5ed7;
+    max-width: 100%;
+}
+
+/* LINKS */
+a {
+    color: #0b5ed7;
+}
+
+a:hover {
+    color: #d63384;
+}
+
+/* FOOTER */
+/* ===== Footer Styling ===== */
+footer {
+    margin-top: 15px;
+    padding: 12px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #ffffff;             
+    background-color:skyblue ; 
+    border-radius: 6px;         
+    text-align: center;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.2); 
+}
+
+/* ============================= */
+/* ENHANCEMENT LAYER (SAFE ADD)  */
+/* ============================= */
+
+/* ---------- CSS POSITIONING ---------- */
+
+/* Header positioning context */
+header {
+    position: relative;
+}
+
+/* Floating badge (optional visual proof of positioning) */
+.profile-badge {
+    position: fixed;
+    top: 12px;
+    right: 15px;
+    background: #ffc107;
+    color: #000;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.35);
+    z-index: 1000;
+}
+
+/* Sticky navbar (does NOT affect form layout) */
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+/* ---------- BOX SHADOW ---------- */
+
+main {
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+section {
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.12);
+    padding: 15px;
+}
+
+img {
+    box-shadow: 0 6px 12px rgba(0,0,0,0.25);
+}
+
+/* Footer depth */
+footer {
+    box-shadow: 0 -4px 10px rgba(0,0,0,0.2);
+}
+
+/* ---------- TEXT SHADOW ---------- */
+
+header h1 {
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+}
+
+h2 {
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+}
+
+footer p {
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+}
+
+/* ---------- SOCIAL ICONS ---------- */
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons img {
+    width: 32px;
+    margin: 0 8px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    border-radius: 50%;
+}
+
+.social-icons img:hover {
+    transform: scale(1.2);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+/* ---------- RESPONSIVE DESIGN ---------- */
+
+/* Tablet */
+@media screen and (max-width: 1024px) {
+    main {
+        width: 94%;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+}
+
+/* Mobile */
+@media screen and (max-width: 768px) {
+
+    nav a {
+        display: block;
+        margin: 8px 0;
+    }
+
+    main {
+        width: 95%;
+        padding: 12px;
+    }
+
+    header h1 {
+        font-size: 22px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    iframe,
+    audio {
+        width: 100%;
+    }
+
+    .social-icons img {
+        width: 26px;
+    }
+}
+
+/* Small mobile */
+@media screen and (max-width: 480px) {
+
+    header h1 {
+        font-size: 20px;
+    }
+
+    nav a {
+        font-size: 13px;
+    }
+
+    footer {
+        font-size: 13px;
+    }
+}
+
+/* ---------- FORM INNER PROTECTION ONLY ---------- */
+/* Allow same layout & positioning, protect only form content */
+
+body.form-page form {
+    position: static;
+    box-shadow: none;
+}
+
+body.form-page input,
+body.form-page textarea,
+body.form-page select,
+body.form-page button {
+    position: static;
+    box-shadow: none;
+}
+
+body.form-page label {
+    position: static;
+    text-shadow: none;
+}

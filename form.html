@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Personal Information Form</title>
+<link rel="stylesheet" href="style1.css">
+<style>
+body.form-page {
+    background:#eef2f8;
+    font-family:Arial,sans-serif;
+    text-align:center; /* Center main content text by default */
+}
+body.form-page main {
+    width:70%;
+    margin:20px auto;
+    padding:20px;
+    background:#fff;
+    border-radius:10px;
+    box-shadow:0 6px 15px rgba(0,0,0,0.2);
+    text-align:left; /* Keep form labels left-aligned */
+}
+body.form-page section {
+    background:#f7f9fc;
+    border:1px solid #0b5ed7;
+    border-radius:8px;
+    padding:10px;
+    margin-bottom:15px;
+}
+body.form-page input[type=text],
+body.form-page input[type=email],
+body.form-page input[type=password],
+body.form-page input[type=date],
+body.form-page textarea,
+body.form-page select,
+body.form-page input[type=file] {
+    width:95%;
+    padding:6px 8px;
+    margin:4px 0 8px;
+    border:2px solid #0b5ed7;
+    border-radius:5px;
+    font-size:14px;
+    transition:0.3s;
+}
+body.form-page input:focus,
+body.form-page textarea:focus,
+body.form-page select:focus {
+    border-color:#d63384;
+    box-shadow:0 0 6px rgba(214,51,132,0.5);
+    outline:none;
+}
+body.form-page input[type=radio],
+body.form-page input[type=checkbox] {transform:scale(1.2);margin-right:6px;}
+body.form-page input[type=submit],
+body.form-page input[type=reset] {
+    background:#0b5ed7;
+    color:#fff;
+    border:none;
+    border-radius:5px;
+    padding:8px 16px;
+    margin-right:8px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:0.3s;
+}
+body.form-page input[type=submit]:hover,
+body.form-page input[type=reset]:hover {
+    background:#d63384;
+    transform:translateY(-2px);
+}
+body.form-page h1 {color:#d63384;text-shadow:1px 1px 2px #aaa;margin-bottom:10px;}
+body.form-page h2 {color:#0b5ed7;margin:10px 0;font-size:18px;}
+body.form-page footer {background:#0b5ed7;color:#fff;padding:10px;border-radius:6px;font-weight:bold;}
+/* Center navbar links */
+body.form-page nav {
+    margin-bottom:20px;
+}
+body.form-page nav a {
+    display:inline-block;
+    margin:0 10px;
+    text-decoration:none;
+    color:#0b5ed7;
+    font-weight:bold;
+    font-size:15px;
+}
+body.form-page nav a:hover {
+    color:#d63384;
+    text-decoration:underline;
+}
+</style>
+</head>
+
+<body class="form-page">
+
+<header>
+<h1>Personal Information Form</h1>
+    <div class="profile-badge">BSc CSIT</div>
+
+</header>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="about.html">About Me</a>
+<a href="projects.html">Projects & Media</a>
+<a href="contact.html">Contact</a>
+<a href="form.html">Form</a>
+</nav>
+
+<main>
+<form action="" method="post">
+<section>
+<h2>1. Personal Information</h2>
+<p><label>Full Name:</label><br><input type="text" name="fullname" required></p>
+<p><label>Email Address:</label><br><input type="email" name="email" required></p>
+<p><label>Password:</label><br><input type="password" name="password" required></p>
+<p><label>Date of Birth:</label><br><input type="date" name="dob"></p>
+</section>
+
+<section>
+<h2>2. Gender Selection</h2>
+<p>
+<input type="radio" name="gender" value="Male">Male
+<input type="radio" name="gender" value="Female">Female
+<input type="radio" name="gender" value="Other">Other
+</p>
+</section>
+
+<section>
+<h2>3. Skills Selection</h2>
+<p>
+<input type="checkbox" name="skills" value="HTML">HTML
+<input type="checkbox" name="skills" value="CSS">CSS
+<input type="checkbox" name="skills" value="JavaScript">JS
+<input type="checkbox" name="skills" value="PHP">PHP
+<input type="checkbox" name="skills" value="MySQL">MySQL
+</p>
+</section>
+
+<section>
+<h2>4. Address Information</h2>
+<p><label>Address:</label><br><textarea name="address" rows="3"></textarea></p>
+<p><label>Country:</label><br>
+<select name="country">
+<option>Nepal</option><option>India</option><option>USA</option><option>UK</option>
+</select></p>
+</section>
+
+<section>
+<h2>5. Additional Information</h2>
+<p><label>Upload Profile Picture:</label><br><input type="file" name="photo"></p>
+<p><input type="checkbox" name="terms" required> I agree to the Terms and Conditions</p>
+</section>
+
+<section>
+<h2>6. Submission</h2>
+<input type="submit" value="Submit">
+<input type="reset" value="Reset">
+</section>
+</form>
+</main>
+
+</body>
+</html>
